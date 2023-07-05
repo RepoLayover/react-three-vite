@@ -20,9 +20,10 @@ const Scene = () => {
 
 const App = () => {
   return (
-    <Canvas camera={{ fov: 70, position: [0, 0, 3] }}>
+    <Canvas camera={{ fov: 70, position: [5, 0, 3] }}>
       <OrbitControls />
       <Scene />
+      <Box />
     </Canvas>
   );
 };
