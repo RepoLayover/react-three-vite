@@ -6,6 +6,9 @@ const Scene = () => {
   const boxRef = useRef();
   useFrame((state, delta) => {
     boxRef.current.rotation.y += 0.02;
+    boxRef.current.rotation.z += 0.02;
+    boxRef.current.rotation.x += 0.02;
+
   });
 
   return (
@@ -23,7 +26,7 @@ const App = () => {
     <Canvas camera={{ fov: 70, position: [5, 0, 3] }}>
       <OrbitControls />
       <Scene />
-      <Box />
+      {/* <Box /> */}
     </Canvas>
   );
 };
